@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font-family: Norse Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    /* background: #000; */
+}
+
+.main {
+    display: flex;
+}
+
+.background-img{
+    display: flex;
+}
+
+.background-img > img {
+    display: flex;
+    height : 35rem;
+    z-index: -1;
+}
+
+#logo-text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background: black;
+    opacity: 70%;
+    color: #fff;
+    z-index: 1;
+    width: 23.3em;
+    height: 10em;
+}
+
+#logo-text > p {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+}
+
+#odin-logo {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: center;
+    color: #fff;
+    z-index: 1;
+    width: 8rem;
+    height: 8rem;
+}
+
+.form-area{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 2em;
+    width: 60em;
+    height: auto;
+    align-self: center;
+}
+
+#u-text-id {
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 100%;
+}
+
+/* #upper-text{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+} */
+
+.Validate-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px solid #000;
+    background: #E5E7EB;
+    height: fit-content;
+    padding: 0.5em 2em;
+    line-height: 3em;
+}
+
+#low-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#low-text > h3 {
+    display: flex;
+}
+
+#form-content {
+    display: flex;
+    height: auto;
+}
+
+#validation-tab-1{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 5em;
+}
+
+#validation-tab-2{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#create-btn {
+    display: flex;
+    background: #446340;
+    padding: 0.7em;
+    border-radius: 10px;
+    margin-top: 0.4em;
+}
+
+#log-in{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    color: green;
+    width: 100%;
+}
+
+input[type='password']:invalid {
+    border-color: red;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: -2px 5px 10px 0px rgba(55, 49, 174, 0.3);
+}
